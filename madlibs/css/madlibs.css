@@ -1,0 +1,121 @@
+:root {
+    --bggrad_1: #cfccc1;
+    --bggrad_2: #80785e;
+    --conbg:#e0ddce; 
+    --fc_1: #2b221c;
+    --mainfont: 'Courier New', Courier, monospace;
+    --subfont: "DM Serif Text", serif;
+}
+
+html {
+    height: 100%;
+}
+body{
+    min-height:100%;
+    background: var(--bggrad_1);
+    background: linear-gradient(170deg, var(--bggrad_1) 9%, var(--bggrad_2) 99%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{ 
+    color: var(--fc_1); 
+    font-family: var(--mainfont);
+    font-weight: bold;
+    margin-top:80px;
+    margin-bottom:80px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50%;
+    max-width: 70%;
+    min-height: 50%;
+    max-height: 100%;
+    padding: 30px;
+    background-color: var(--conbg);
+    border-radius: 10px; 
+    overflow-y: auto;
+}
+
+.nav {
+    text-align: left; 
+}
+.nav a { 
+    color: var(--fc_1);
+    text-decoration: underline;
+}
+
+#title{ 
+    text-align: center;
+    font-weight: normal;
+    font-size:100px; 
+    font-family: var(--subfont); 
+}
+
+#subtitle{
+    text-align: center;
+    font-weight: normal;
+    font-size:50px; 
+    font-family: var(--subfont); 
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input-group label{
+    padding-left: 10px;
+}
+
+.input-group input[type="text"] {
+    height: 30px;
+    width: 250px;
+    border: 1px solid var(--fc_1);
+    border-radius: 20px;
+    padding-left: 10px;
+    margin: 3px 0 10px;
+}
+
+
+#madlibs-submit button, 
+#madlibs-reset {
+    min-height: 40px;
+    width: 250px;
+    letter-spacing: 8px;
+    color: var(--bggrad_1);
+    background-color: var(--fc_1);
+    border-radius: 20px; 
+    padding: 10px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--mainfont);
+}
+
+.hide {
+    display: none;
+}
+
+#completed-story{
+    padding: 0 5%;
+    margin-top: 15px;
+    text-align: left;
+    font-size:18px;
+    line-height: 2;
+}
+
+ 
+
+@media only screen and (max-width: 600px) {
+    h2{
+        margin-top: 5px;
+    }
+    .container{
+        max-width: 100%;
+        max-height: 80%;
+    }
+
+    .input-group {
+        margin: 5px;
+    }
+
+}

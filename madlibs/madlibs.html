@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/madlibs.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Mad Libs</title>
+</head>
+<body>
+
+
+    <div class="container"> 
+        <hr>
+        <nav class="nav">
+            <div class="col">
+                <div class="row-sm-2">
+                    <p><a href="/index.html">Return</a></p>
+                </div></div>
+            <div class="row-sm-2">
+                <p><a href="https://www.pexels.com/photo/crop-unrecognizable-woman-holding-flower-7784599/">Photo credit</a></p>
+            </div>
+        </nav>
+        <hr>
+
+        <div id="title">
+            <header>
+                <p>the MADLIBS</p> <hr>
+            </header>
+        </div>   
+        <div id="subtitle">
+            <section>
+                <p><i>P.I. TELLS WOMAN TERRIBLE NEWS.</i></p> <hr>
+            </section>
+        </div>    
+        <main>
+            <!-- input -->
+            <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+                <section id="madlibs-inputs">
+                    <div class="row">
+                        <div class="col-sm-3">
+                        <div class="input-group">
+                            <label for="musician">A musician:</label>
+                            <input type="text" id="musician" name="musician" required>
+                        </div></div>
+        
+                        <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="relationship">A relationship:</label>
+                        <input type="text" id="relationship" name="relationship" required>
+                    </div></div>
+                    
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="name">A surname:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div></div>
+                    
+                    
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="adjective1">An adjective:</label>
+                        <input type="text" id="adjective1" name="adjective1" required>
+                    </div></div>
+                    
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="adjective2">Another adjective:</label>
+                        <input type="text" id="adjective2" name="adjective2" required>
+                    </div></div>
+        
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="object">An object:</label>
+                        <input type="text" id="object" name="object" required>
+                    </div></div>
+        
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="expression">A facial expression:</label>
+                        <input type="text" id="expression" name="expression" required>
+                    </div></div>
+                    
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="adverb1">An adverb:</label>
+                        <input type="text" id="adverb1" name="adverb1" required>
+                    </div></div>
+        
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="adverb2">Another adverb:</label>
+                        <input type="text" id="adverb2" name="adverb2" required>
+                    </div></div>
+
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                        <label for="color">A color:</label>
+                        <input type="text" id="color" name="color" required>
+                    </div></div></div>
+                </section>
+                
+                <section id="madlibs-submit">
+                    <button type="submit">
+                        Create
+                    </button>
+                </section>
+            </form>
+
+            <section id="completed-story" class="hide"></section>
+        </main>
+    </div>
+    
+    
+
+    <script src="js/madlibs.js"></script>
+</body>
+</html>
